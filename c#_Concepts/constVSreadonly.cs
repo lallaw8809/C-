@@ -20,7 +20,7 @@ namespace Program
 
             // As both of them (PI and name) are constant, we can not change the value here
             // obj.PI = 12.09; // Can not change the value
-            //obj.name = "Terik"; // can change the value here      
+            // obj.name = "Terik"; // can change the value here      
         }
     }
 }

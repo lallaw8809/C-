@@ -7,7 +7,7 @@ namespace Program
         // Creating a class
         class className
         {
-            // Class member
+            // Class field or attribute
             public int variable = 10;
 
             // Class method definition
@@ -22,11 +22,17 @@ namespace Program
             // Create an object
             className obj = new className();
 
-            // Access the class member
+            // Access the class field or attribute
             Console.WriteLine("Class variable name : " + obj.variable);
 
             // Access the class method
             obj.classMethod();
+
+            // can create multiple object of one class
+            // Example
+            className obj2 = new className();
+            obj2.variable = 200;
+            Console.WriteLine(obj2.variable);
         }
     }
 }

@@ -36,7 +36,7 @@ namespace Program
             Console.WriteLine("Adding two numbers : {0}", mul);
 
             // Update the class member
-            Calculator.name = "Phonka";
+            Calculator.name = "Phonak";
             Calculator.displayName();
         }
     }
