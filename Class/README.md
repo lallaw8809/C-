@@ -9,8 +9,8 @@ Here it is the detailed description of various data members and function methos 
 
 ![](https://github.com/lallaw8809/c-Sharp/blob/main/imgs/class_object.png?raw=true)
 
-Ref; https://www.tutlane.com/tutorial/csharp/csharp-classes-and-objects-with-examples#:~:text=In%20c%23%2C%20Classes%20and%20Objects%20are%20interrelated.%20The,class%20to%20access%20the%20defined%20properties%20and%20methods.
-
+ [Reference](https://www.tutlane.com/tutorial/csharp/csharp-classes-and-objects-with-examples#:~:text=In%20c%23%2C%20Classes%20and%20Objects%20are%20interrelated.%20The,class%20to%20access%20the%20defined%20properties%20and%20methods)  
+ 
 # Constructors
 
 - A construct is a special method that is used to intitialize objects.
