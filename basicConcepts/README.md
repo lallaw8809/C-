@@ -12,11 +12,9 @@
 
 ### Static Class
 
-
-### ABstract
-
-
 ### Nulklable
 
-### 
 
+Delegate 
+
+Object
