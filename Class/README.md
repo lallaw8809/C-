@@ -49,3 +49,5 @@ Thease are the class modifiers in c#.
 `multiInheritance.cs` Sample code of multi inheritance  
 
 # Prpertoies
+
+# Interface

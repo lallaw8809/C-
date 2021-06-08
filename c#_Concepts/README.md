@@ -2,7 +2,11 @@
 
 ### IEnuarable
 
-### Static vs constant
+### Readonly vs constant
+
+- Both (Readonly and constats) of them  are contant.
+- `contant` is compile time constant
+- `readonly` is run time constant. 
 
 ### Nullable
 
