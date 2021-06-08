@@ -2,12 +2,11 @@ using System;
 
 namespace Program
 { 
-    /* Abstract class
-        Abstract class is marked as a keyword 'abstract' in the class definition.
-            Can not created a instace of this class but can be used in drived class
-     */
+    /* Abstract class  */
     abstract public class baseClass
     {
+        public string str = "Abstarct class";
+
         public virtual int addTwoNumber(int x, int y)
         {
             return 0;
@@ -18,12 +17,15 @@ namespace Program
             return x * y;
         }
     }
+
+    // Abstarct class can be used in drived class
     public class subClass : baseClass
     {
         public override int addTwoNumber(int x, int y)
         {
             return x + y;
         }
+
         public override int multiplyTwoNumber(int x, int y)
         {
             return base.multiplyTwoNumber(x,y);
@@ -36,6 +38,7 @@ namespace Program
         {
             var x = new subClass();
 
+            Console.WriteLine(x.str);
             Console.WriteLine(x.addTwoNumber(10, 23));
             Console.WriteLine(x.multiplyTwoNumber(10, 23));
         }

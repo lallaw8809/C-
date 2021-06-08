@@ -16,6 +16,7 @@ namespace Program
                 Console.WriteLine("I am in class method");
             }
         }
+
         static void Main(string[] args)
         {
             // Create an object
