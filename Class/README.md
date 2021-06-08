@@ -4,6 +4,11 @@ A class is a data structucture that contains a memberes (contans and field) and 
 
 `class.cs`  Sample example code of class  and object
 
+Here it is the detailed description of various data members and function methos used in the c# c.
+![](https://github.com/lallaw8809/c-Sharp/blob/main/imgs/class_object.png?raw=true)
+
+Ref; https://www.tutlane.com/tutorial/csharp/csharp-classes-and-objects-with-examples#:~:text=In%20c%23%2C%20Classes%20and%20Objects%20are%20interrelated.%20The,class%20to%20access%20the%20defined%20properties%20and%20methods.
+
 # Class modifier
 Thease are the class modifiers in c#.
 
