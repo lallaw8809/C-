@@ -32,10 +32,10 @@ Thease are the class modifiers in c#.
 ### Constructor overloading
 It supports to have a different set of parameters, written a sample code in `constructorOverlaod.cs`
 
-## Calling constructor
+### Calling constructor
 It will execute the calling contructor first and followed by execute the constructor.  
 
-## statuc constructor
+### static constructor
 - A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
 - A static constructor does not take access modifiers or have parameters
 - A class can only have one static constructor.
@@ -63,6 +63,22 @@ It will execute the calling contructor first and followed by execute the constru
 `abstract.cs` Showed a sample code that how to use the abstract class, virtual and override.  
 
 # Inheritance
+
+This method is used to inherit the field and method form one class to another.  
+The inheritance symbol `:`    
+
+Syntax
+```sh
+<access_modifier> class <base_class_name>
+{
+    // Base or parent class Implementation
+}
+
+<access_modifier> class <derived_class_name> : <base_class_name>
+{
+    // Derived or child class implementation
+}
+```
 
 `inheritance.cs` Sample code of inheritance   
 `multiInheritance.cs` Sample code of multi inheritance  

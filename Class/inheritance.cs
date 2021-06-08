@@ -7,7 +7,7 @@ namespace Program
         // Base or Parent class
         class Parent
         {
-            // Class member
+            // Class filed
             public int parentVariable = 10;
 
             // Class method definition
@@ -20,7 +20,7 @@ namespace Program
         // Child or drived class
         class Child : Parent
         {
-            // Class member
+            // Class field
             public int childVariable = 99;
 
             // Class method definition

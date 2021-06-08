@@ -6,7 +6,7 @@ namespace Program
     {
         class A
         {
-            // Class member
+            // Class field
             public string Name = "Lal Bosco";
 
             // Class method definition
@@ -18,7 +18,7 @@ namespace Program
 
         class B : A
         {
-            // Class member
+            // Class field
             public string profession = "Software Developer";
 
             // Class method definition
@@ -30,7 +30,7 @@ namespace Program
 
         class C : B
         {
-            // Class member
+            // Class field
             public string company;
 
             // Class method definition

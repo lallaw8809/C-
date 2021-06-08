@@ -60,12 +60,14 @@ namespace Program
 
     }
 
+    // Sample static constructor
     public class staticConstructor
     {
         static staticClass()
         {
             Console.WriteLine("Static constructor called");
         }
+
         public staticClass()
         {
             Console.WriteLine("Default constructor called");
