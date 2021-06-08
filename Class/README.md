@@ -26,6 +26,13 @@ Thease are the class modifiers in c#.
 `constructors.` Sample code of constructor class  
 
 # Static class
+
+- A static class cannot be instantiated.
+- Can not use a new operator to create a variable type of the class type (No instance variable).
+- Contains only static members.
+- Cannot contain Instance Constructors.
+- It is sealed so we can not inheritance the static class
+
 `staticClass.`  Sample example static code of class  
 
 # Abstract class
@@ -37,5 +44,8 @@ Thease are the class modifiers in c#.
 `abstract.cs` Showed a sample code that how to use the abstract class, virtual and override.  
 
 # Inheritance
+
 `inheritance.cs` Sample code of inheritance   
 `multiInheritance.cs` Sample code of multi inheritance  
+
+# Prpertoies
