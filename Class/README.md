@@ -11,7 +11,32 @@ Here it is the detailed description of various data members and function methos 
 
 Ref; https://www.tutlane.com/tutorial/csharp/csharp-classes-and-objects-with-examples#:~:text=In%20c%23%2C%20Classes%20and%20Objects%20are%20interrelated.%20The,class%20to%20access%20the%20defined%20properties%20and%20methods.
 
+# Constructors
+
+- A construct is a special method that is used to intitialize objects.
+- It is a member of the class. The name of the constructor is same as the class name.
+- A constructor is used to set the initial values for fields.
+
+### Constructor overloading
+
+It supports to have a different set of parameters, written a sample code in `constructorOverlaod.cs`
+
+### Calling constructor
+
+It will execute the calling contructor first and followed by execute the constructor. 
+
+ ### static constructor
+
+- A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
+- A static constructor does not take access modifiers or have parameters
+- A class can only have one static constructor.
+- Static constructors cannot be inherited or overloaded.
+
+`constructors.cs` Sample code of constructor class  
+`constructorOverlaod.cs` Sample code for constructor overload or method overload, calling constructor and static contructor.
+
 # Class modifier
+
 Thease are the class modifiers in c#.
 
 - public   
@@ -23,26 +48,6 @@ Thease are the class modifiers in c#.
 - sealed   
 - new  
 - class_modifier_unsafe  
-
-# Constructors
-- A construct is a special method that is used to intitialize objects.
-- It is a member of the class. The name of the constructor is same as the class name.
-- A constructor is used to set the initial values for fields.
-
-### Constructor overloading
-It supports to have a different set of parameters, written a sample code in `constructorOverlaod.cs`
-
-### Calling constructor
-It will execute the calling contructor first and followed by execute the constructor.  
-
-### static constructor
-- A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
-- A static constructor does not take access modifiers or have parameters
-- A class can only have one static constructor.
-- Static constructors cannot be inherited or overloaded.
-
-`constructors.cs` Sample code of constructor class  
-`constructorOverlaod.cs` Sample code for constructor overlad, calling constructor and static contructor.
 
 # Static class
 
@@ -60,7 +65,7 @@ It will execute the calling contructor first and followed by execute the constru
 - Can not created a instace of this class but can be used in drived class.
 - An abstract class cannot be sealed.
 
-`abstract.cs` Showed a sample code that how to use the abstract class, virtual and override.  
+`abstract.cs` Showed a sample code that how to use the abstract class in the drived class.  
 
 # Inheritance
 
@@ -83,6 +88,55 @@ Syntax
 `inheritance.cs` Sample code of inheritance   
 `multiInheritance.cs` Sample code of multi inheritance  
 
-# Prpertoies
+# Polymorphism 
+
+Polymorphism means many form (more than one form) and it can be achieved by two way
+
+1. Method overring
+2. Method overloading
+
+### 1. Method overloading
+Two or more methods are in the same class by using same method name with different parameter.
+Example
+```sh
+class A
+{
+    public void function() {}
+    public void function(int x) {}
+}  
+```
+
+### 2. Method overring
+Same method name is used in the diffent class that means same method name is used in the parent and child class.
+```sh
+class A
+{
+    public void function() {}
+} 
+
+class B : A
+{
+    public void function(int x) {}
+}
+```
+
+Virtual: This means that the method with the virtual will be overridden.
+override: It is used to override the method in the drived class of the base class 
+
+# Prperties
+
+Syntax
+```sh
+<acces_modifier> <return_type> <property_name>  
+   {  
+    get  
+   {  
+   }  
+    set  
+   {  
+   }  
+} 
+```
+`properties.cs` Sample code of property.  
 
 # Interface

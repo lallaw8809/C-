@@ -25,7 +25,7 @@ namespace Program
         }
     }
 
-    // Multiple constructor
+    // Multiple constructor (method overloading)
     public class sampleClass
     {
         public sampleClass()

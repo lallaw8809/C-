@@ -1,34 +1,26 @@
 using System;
 
 namespace Program
-{ 
-    /* Abstract class  */
+{
+    // Abstract class
     abstract public class baseClass
     {
-        public string str = "Abstarct class";
+        public string absName = "Abstarct class";
 
-        public virtual int addTwoNumber(int x, int y)
+        public void method()
         {
-            return 0;
-        }
-
-        public virtual int multiplyTwoNumber(int x, int y)
-        {
-            return x * y;
+            Console.WriteLine("Abstract class method");
         }
     }
 
     // Abstarct class can be used in drived class
     public class subClass : baseClass
     {
-        public override int addTwoNumber(int x, int y)
-        {
-            return x + y;
-        }
+        public string subName = "Sub class";
 
-        public override int multiplyTwoNumber(int x, int y)
+        public void function()
         {
-            return base.multiplyTwoNumber(x,y);
+            Console.WriteLine("Sub class method");
         }
     }
 
@@ -36,11 +28,19 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            var x = new subClass();
+            // Can not access the abstract class 
+            // baseClass o = new baseClass();
 
-            Console.WriteLine(x.str);
-            Console.WriteLine(x.addTwoNumber(10, 23));
-            Console.WriteLine(x.multiplyTwoNumber(10, 23));
+            // Abstract class can be used in the drived class
+            subClass obj = new subClass();
+
+            // Access the sub class field and method
+            Console.WriteLine(obj.subName);
+            obj.function();
+
+            // Access  the abstract class field and method
+            Console.WriteLine(obj.absName);
+            obj.method();
         }
     }
 }
