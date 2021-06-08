@@ -28,7 +28,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            // Can not access the abstract class 
+            // Can not create a object of abstract class 
             // baseClass o = new baseClass();
 
             // Abstract class can be used in the drived class

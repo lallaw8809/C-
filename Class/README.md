@@ -96,7 +96,7 @@ Polymorphism means many form (more than one form) and it can be achieved by two 
 2. Method overloading
 
 ### 1. Method overloading
-Two or more methods are in the same class by using same method name with different parameter.
+Two or more methods are in the same class by using same method name with different parameter.  
 Example
 ```sh
 class A
@@ -107,7 +107,7 @@ class A
 ```
 
 ### 2. Method overring
-Same method name is used in the diffent class that means same method name is used in the parent and child class.
+Same method name is used in the diffent class that means that the same method name is used in the parent and child class.
 ```sh
 class A
 {
@@ -119,9 +119,15 @@ class B : A
     public void function(int x) {}
 }
 ```
+virtual and override keywords are used to overide the base class.  
 
-Virtual: This means that the method with the virtual will be overridden.
-override: It is used to override the method in the drived class of the base class 
+virtual: This means that the method is virtual and it will be overridden in the drived class. virtual is used in the abse class and override is used in the drived class.  
+override: It is used to override the method in the drived class of the base class.    
+
+### method hiding (new keyword is used)
+In the method hiding a base class reference variable pointing to a child class object, will invole the hidden method in the abse class.  
+
+`polymorphism.cs` Sample code shows that how to use the polymorphism (method overloading, method overriding and method hiding).  
 
 # Prperties
 

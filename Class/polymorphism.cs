@@ -15,20 +15,55 @@ namespace Polymorphism
         }
     }
 
+
     // Method overriding example 
-    class B
+    class IndiaStates
     {
-        public void method()
+        public virtual void language()
         {
-            Console.WriteLine("class B");
+            Console.WriteLine("Each state people speaks diffent launges");
         }
     }
 
-    class C : B
+    class TamilNadu : IndiaStates
     {
-        public void method()
+        public override void language()
         {
-            Console.WriteLine("Class C");
+            Console.WriteLine("TamilNadu state people speaks Tamil");
+        }
+    }
+
+    class Andrapradesh : IndiaStates
+    {
+        public override void language()
+        {
+            Console.WriteLine("Andrapradesh state people speaks Telugu");
+        }
+    }
+    
+    class Kerala : IndiaStates
+    {
+        public override void language()
+        {
+            Console.WriteLine("Kerala state people speaks Malayalam");
+        }
+    }
+
+
+    // Method hiding
+    class Parent
+    {
+        public virtual void printName()
+        {
+            Console.WriteLine("I am in parent class");
+        }
+    }
+
+    class Child : Parent
+    {
+        public new void printName()
+        {
+            Console.WriteLine("I am in child class");
         }
     }
 
@@ -37,17 +72,41 @@ namespace Polymorphism
         static void Main(string[] args)
         {
             // METHOD OVERLOADING
+            Console.WriteLine("Example of METHOD OVERLOADING");
             // Accessing the method overloading
             A a = new A();
             a.func();   // o/p: Class A without param
             a.func(10); // o/p: Class A with param : 10
+            Console.WriteLine();
 
             // METHOD OVERRIDING
-            B b = new B();
-            b.method();
+            Console.WriteLine("Example of METHOD OVERRIDING");
+            IndiaStates[] states = new IndiaStates[4];
 
-            C c = new C();
-            c.method();
+            states[0] = new IndiaStates();
+            states[1] = new TamilNadu();
+            states[2] = new Andrapradesh();
+            states[3] = new Kerala();
+
+            // The output will "Each state people speaks diffent launges" if virtual and override is not used.
+            // Only the base class method will get called if virtual and override is not used
+            states[0].language();
+            states[1].language();
+            states[2].language();
+            states[3].language();
+
+            // another method to call of the methods
+            //foreach (IndiaStates s in states)
+            //{
+            //    s.language();
+            //}
+            Console.WriteLine();
+
+            // METHOD HIDING
+            Console.WriteLine("Example of METHOD HIDING");
+            Parent p = new Child();
+            p.printName();
+            Console.WriteLine();
         }
     }
 }
