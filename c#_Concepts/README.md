@@ -2,6 +2,12 @@
 
 ### IEnuarable
 
+### in vs ref vs out
+
+### List 
+
+### Dictionary
+
 ### Readonly vs constant
 
 - Both (Readonly and constats) of them  are contant.

@@ -10,7 +10,7 @@ Here it is the detailed description of various data members and function methos 
 ![](https://github.com/lallaw8809/c-Sharp/blob/main/imgs/class_object.png?raw=true)
 
  [Reference](https://www.tutlane.com/tutorial/csharp/csharp-classes-and-objects-with-examples#:~:text=In%20c%23%2C%20Classes%20and%20Objects%20are%20interrelated.%20The,class%20to%20access%20the%20defined%20properties%20and%20methods)  
- 
+
 # Constructors
 
 - A construct is a special method that is used to intitialize objects.
@@ -43,6 +43,7 @@ Thease are the class modifiers in c#.
 - protected  
 - private  
 - internal  
+
 - abstarct   
 - static   
 - sealed   
@@ -106,7 +107,7 @@ class A
 }  
 ```
 
-### 2. Method overring
+### 2. Method overring (virtual and override keyword is used)
 Same method name is used in the diffent class that means that the same method name is used in the parent and child class.
 ```sh
 class A
@@ -124,12 +125,16 @@ virtual and override keywords are used to overide the base class.
 virtual: This means that the method is virtual and it will be overridden in the drived class. virtual is used in the abse class and override is used in the drived class.  
 override: It is used to override the method in the drived class of the base class.    
 
-### method hiding (new keyword is used)
+### method hiding (virtual and new keyword is used)
 In the method hiding a base class reference variable pointing to a child class object, will invole the hidden method in the abse class.  
 
 `polymorphism.cs` Sample code shows that how to use the polymorphism (method overloading, method overriding and method hiding).  
 
 # Prperties
+- Properties is a memebr and its used to protect the fields.
+- `get` and `set` accessor is used to implement the properties. `get` accessor is used to return the value and `set` is used to set the value.
+- The `value` keyword is used to define the value being assigned by the `set` or init accessor.
+- The properties can be read and write (if they have both `set` and `get`), write only (if its have only `set`) and read only (if its have `get` only).
 
 Syntax
 ```sh
