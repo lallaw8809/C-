@@ -33,8 +33,5 @@ number = variable ?? 5;
 
 ## Object
 
-## method overriding and method hiding
-### Virtual vs override vs new keyword
-
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction
 

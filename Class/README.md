@@ -151,3 +151,8 @@ Syntax
 `properties.cs` Sample code of property.  
 
 # Interface
+- Another way to acheive the abstarction is interfaces in c#
+- Members of interface are abstarct and public by default.
+- Interfaces can contains properties, methods and events, NOT fields
+- Interface can not have a constructor
+- Interface can aontains only the member declarion and the derived class responsiblity to have the member definition.
