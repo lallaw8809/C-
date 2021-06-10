@@ -4,10 +4,6 @@
 
 ### in vs ref vs out
 
-### List 
-
-### Dictionary
-
 ### Readonly vs constant
 
 - Both (Readonly and constats) of them  are contant.
@@ -31,7 +27,7 @@ number = variable ?? 5;
 
 ## Delegate 
 
-## Object
+
 
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction
 
