@@ -5,7 +5,8 @@ Then its pop up below messange on the gitbash.
 ```bash
 logon failed use ctrl+c to cancel basic credential prompt
 ```
-How to solove it.  
+## How to solve it.  
+
 Enter the below commands on gitbash  
 
 ```bash
@@ -14,5 +15,3 @@ git credential-manager uninstall --force
 
 Then push the code and gitbash pop up a windoes for to enter the github crential.
 Once entered the credential, Iam able to push the code.
-
-

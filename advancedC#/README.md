@@ -27,7 +27,11 @@ number = variable ?? 5;
 
 ## Delegate 
 
+## event
+
+### Contextual keywords in c#
 
 
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/default
 

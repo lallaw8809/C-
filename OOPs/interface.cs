@@ -8,7 +8,14 @@ namespace Program
         {
             // interface method does not have a body
             void WhereDoYouLive();
-        }
+
+            // Interface can not have a field
+            // int i;
+
+            // Compiler error if we use public/protected/private
+            // it is public by default
+            // public void printName(string text);
+         }
 
         // Multiple interfaces
         interface Denmark
@@ -16,22 +23,22 @@ namespace Program
             void WhereYourFriendLive();
         }
 
-        class Halmstad : Sweden, Denmark
+        class Lives : Sweden, Denmark
         {
             public void WhereDoYouLive()
             {
-                Console.WriteLine("I am living in Halmstad");
+                Console.WriteLine("I live in Halmstad, Sweden");
             }
+
             public void WhereYourFriendLive()
             {
                 Console.WriteLine("My friend lives in Denmark");
             }
-
         }
         
         static void Main(string[] args)
         {
-            Halmstad state = new Halmstad();
+            Lives state = new Lives();
             state.WhereDoYouLive();
             state.WhereYourFriendLive();
         }

@@ -1,4 +1,4 @@
->using System;
+using System;
 
 namespace Program
 {
@@ -35,6 +35,16 @@ namespace Program
             Console.WriteLine("Contruct type4 Age : " + obj44.age);
             Console.WriteLine("Contruct type4 Location : " + obj44.location);
             Console.WriteLine();
+
+            // Declare a constructor4 by using an object initializer 
+            constructor4 objInit = new constructor4
+            {
+                Name = "Lal Bosco",
+                age = 32,
+                location = "TamilNadu"
+            };
+
+            Console.WriteLine(objInit.ToString());
         }
     }
 
@@ -49,6 +59,7 @@ namespace Program
             Name = "Lal";
         }
     }
+
     class constructor2
     {
         // Class field
@@ -95,5 +106,7 @@ namespace Program
             age = myAge;
             location = myLocation;
         }
+
+        public override string ToString() => Name + "  " + age + " " + location;
     }
 }
