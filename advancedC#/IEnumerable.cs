@@ -10,7 +10,7 @@ public class Example
         // Convert the list into IEnumerable
         IEnumerable<int> ienun = (IEnumerable <int>) years;
 
-        // it will not remember (samea s array with index) which index it is executing
+        // It will not remember (same as array with index) which index it is executing
         Console.WriteLine("Printing all off List with IEnumerable method : ");
         foreach (int year in ienun)
         {

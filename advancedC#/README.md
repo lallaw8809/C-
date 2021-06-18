@@ -2,7 +2,11 @@
 
 ### IEnuarable
 
-### in vs ref vs out
+### in vs ref vs out [parameter keyword]
+`ref` : It is used as a parameter passed and can be modified by the method.  
+`in` : It is used as a parameter passed and can NOT be modified by the method.  
+`out` : It is used as a parameter passed and MUST be modified by the method.  
+`ref` and `in`, both require the parameter has to initialize before pass into the method.
 
 ### Readonly vs constant
 
