@@ -3,7 +3,10 @@
     2. Integral Types - sbyte, byte, short, ushort, int, uint, long, ulong, char  
     3. Floating Types – float and double  
     4. Decimal Types   
-    5. String Type   
+    5. c# reference type
+        a. object
+        b. string
+        c. dynamic   
 
 ## 1. Boolean type – Only true or false   
 ## 2. Integral Types - sbyte, byte, short, ushort, int, uint, long, ulong, char  
