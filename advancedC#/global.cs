@@ -1,20 +1,3 @@
-lobal refers to the global namespace, it can be used to solve problems whereby you may redefine types. For example:
-
-class foo
-{
-    class System
-    {
-
-    }
-
-}
-If you were to use System where it would be locally scoped in the foo class, you could use:
-
-global::System.Console.WriteLine("foobar");
-to access the global namespace.
-
-Example
-
 using System;
 
 class Foo
