@@ -46,10 +46,7 @@ number = variable ?? 5;
 `class.cs` Sample code to show taht how to use the nullable in c#.  
 
 ## Delegate 
-It is function callback/pointer to functions in c#. There are three step is involved in Delegae.
-- Declare a delegate
-- Set a target method
-- Invoke a delegate
+It is function callback/pointer to functions in c#. 
 ```sh
 Syntex
 [access modifier] delegate [return type] [delegate name]([parameter list])

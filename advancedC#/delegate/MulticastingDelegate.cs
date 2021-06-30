@@ -1,10 +1,10 @@
-using System;
+// A delegate can point multiple methods.
 
-public delegate int Calculators(int x, int y);
+using System;
 
 public class Example
 {
-
+    public delegate int Calculators(int x, int y);
     public static int addTwoNumber(int x, int y)
     {
         Console.WriteLine("Adding two numbers ");
@@ -16,17 +16,24 @@ public class Example
         Console.WriteLine("Multiplying two numbers ");
         return x * y;
     }
+
     public static void Main()
     {
         Calculators cal;
-        Calculators add = new Calculators(addTwoNumber);
-        Calculators mul = new Calculators(mulTwoNumber);
+        Calculators add = addTwoNumber;
+        Calculators mul = mulTwoNumber;
 
         cal = add;
-        cal += mul;
+        cal += mul; // Combines mul
 
         // It will call add first followed by mul
         int sum = cal(2, 3);
+
+        Console.WriteLine("Adding two numbers: " + sum);
+
+        cal -= mul; // Removes mul
+
+        sum = cal(2, 3); // It will call only the addTwoNumber
 
         Console.WriteLine("Adding two numbers: " + sum);
     }
