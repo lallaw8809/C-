@@ -3,16 +3,27 @@
 ### IEnuarable
 
 ### in vs ref vs out [parameter keyword]
-`ref` : It is used as a parameter passed and can be modified by the method.  
-`in` : It is used as a parameter passed and can NOT be modified by the method.  
-`out` : It is used as a parameter passed and MUST be modified by the method.  
+`ref`
+- It is used as a parameter passed and can be modified by the method.  
+- It is MUST be initialized before passing to the method.  
+
+`out`
+- It is used as a parameter passed and MUST be modified by the method.  
+- It is MUST NOT be initialized before passing to the method.  
+
+`in` (readonly) : It is used as a parameter passed and can NOT be modified by the method. 
+
 `ref` and `in`, both require the parameter has to initialize before pass into the method.
+We can not use these modifier in methods with `async` modifier as well as `yield return` or `yield break`.
 
-### Readonly vs constant
+`ref_ou_in` Folder has an example of `ref`vs `out` vs `in`
 
-- Both (Readonly and constats) of them  are contant.
+### constant vs Readonly
+
+- Both (Readonly and constats) of them are contant.
 - `contant` is compile time constant
 - `readonly` is run time constant. 
+`constVsreadonly.c` Shows a sample example of constant vs readonly.  
 
 ### global
 
@@ -28,6 +39,7 @@ class foo
 ```
 If you were to use System where it would be locally scoped in the foo class, you could use 
 `global::System.Console.WriteLine("foobar")` to access the global namespace.
+
 `global.cs` Sample code to show taht how to use the global in c#.  
 
 ### Nullable
@@ -46,9 +58,9 @@ number = variable ?? 5;
 `class.cs` Sample code to show taht how to use the nullable in c#.  
 
 ## Delegate 
-It is function callback/pointer to functions in c#. 
+It is function callback/pointer to functions in c#.  
+Syntex  
 ```sh
-Syntex
 [access modifier] delegate [return type] [delegate name]([parameter list])
 ```
 `Delegate` This folder contains a sample code of delegates.
