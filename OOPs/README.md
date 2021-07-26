@@ -58,7 +58,7 @@ Thease are the class modifiers in c#.
 - Cannot contain Instance Constructors.
 - It is sealed so we can not inheritance the static class
 
-`staticClass.`  Sample example static code of class  
+`staticClass.cs`  Sample example static code of class  
 
 # Abstract class
 
@@ -159,4 +159,4 @@ Syntax
 - These access modifier (public/private/protected) is not valid in interceface members.
 `interface.cs` Sample code of how to use interface
 
-# 
+# sealed
