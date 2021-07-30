@@ -41,3 +41,11 @@ namespace Program
         }
     }
 }
+
+/*
+Output:
+-------
+    Adding two numbers : 15
+    Adding two numbers : 50
+    Name : Phonak
+*/

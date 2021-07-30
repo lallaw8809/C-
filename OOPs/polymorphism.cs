@@ -110,3 +110,20 @@ namespace Polymorphism
         }
     }
 }
+
+/*
+Output:
+-------
+    Example of METHOD OVERLOADING
+    Class A without param
+    Class A with param : 10
+
+    Example of METHOD OVERRIDING
+    Each state people speaks diffent launges
+    TamilNadu state people speaks Tamil
+    Andrapradesh state people speaks Telugu
+    Kerala state people speaks Malayalam
+
+    Example of METHOD HIDING
+    I am in parent class
+*/

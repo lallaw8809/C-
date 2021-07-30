@@ -14,14 +14,19 @@ namespace Program
 
             // Accessing the thrid constructor
             sampleClass obj3 = new sampleClass(100, "Lal Bosco");
+            Console.WriteLine();
 
             // Example of calling constructor
             callingConstructor obj4 = new callingConstructor();
+            Console.WriteLine();
 
             // Example of static class
             // Static constructor is getting called first and followed by default construct will get get called
-            staticConstructor onj5 = new staticConstructor();
-            staticConstructor onj6 = new staticConstructor(); // Deafult constructor is getting called
+            staticConstructor obj5 = new staticConstructor();
+            Console.WriteLine();
+
+            Console.WriteLine("Calling the static constructor second time...");
+            staticConstructor obj6 = new staticConstructor(); // Deafult constructor is getting called
         }
     }
 
@@ -47,7 +52,7 @@ namespace Program
     // Calling Constructor from another Constructor
     public class callingConstructor
     {
-        // It will call the second constructor and followed by runs the first constructor
+        // It will call the second constructor first and followed by runs the first constructor
         public callingConstructor() : this(10)
         {
             Console.WriteLine("First calling constructor");
@@ -63,15 +68,33 @@ namespace Program
     // Sample static constructor
     public class staticConstructor
     {
-        static staticClass()
+        static staticConstructor()
         {
             Console.WriteLine("Static constructor called");
         }
 
-        public staticClass()
+        public staticConstructor()
         {
             Console.WriteLine("Default constructor called");
         }
 
     }
 }
+
+
+/*
+Output:
+-------
+    First constructor
+    Sencond constructor: value of i 12
+    Thrid constructor: value 100 name Lal Bosco
+
+    Sencond calling constructor: value of i 10
+    First calling constructor
+
+    Static constructor called
+    Default constructor called
+
+    Calling the static constructor second time...
+    Default constructor called
+*/

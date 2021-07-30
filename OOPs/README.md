@@ -43,12 +43,18 @@ Thease are the class modifiers in c#.
 - protected  
 - private  
 - internal  
-
 - abstarct   
 - static   
 - sealed   
 - new  
-- class_modifier_unsafe  
+- unsafe  
+
+| Method Access Modifiers | Description |
+| ------     | ------ |
+| Public     | This type or member can be freely accessed by inside and outside of the class in which it is defined. |
+| protected  | This type or member can be freely accessed only by in the same class and in the derived from that class.|
+| private    | This type or member can be freely accessed only by in the same class or struct.|
+| internal   | This type or member can be freely accessed by any code in the same assembly, but not from another assembly.|
 
 # Static class
 
@@ -122,11 +128,11 @@ class B : A
 ```
 virtual and override keywords are used to overide the base class.  
 
-virtual: This means that the method is virtual and it will be overridden in the drived class. virtual is used in the abse class and override is used in the drived class.  
+virtual: This means that the method is virtual and it will be overridden in the drived class. virtual is used in the base class and override is used in the drived class.  
 override: It is used to override the method in the drived class of the base class.    
 
 ### method hiding (virtual and new keyword is used)
-In the method hiding a base class reference variable pointing to a child class object, will invole the hidden method in the abse class.  
+In the method hiding a base class reference variable pointing to a child class object, will invole the hidden method in the base class.  
 
 `polymorphism.cs` Sample code shows that how to use the polymorphism (method overloading, method overriding and method hiding).  
 
@@ -160,3 +166,4 @@ Syntax
 `interface.cs` Sample code of how to use interface
 
 # sealed
+- Once the class is declared as sealed class, this cann class can not be inherited.

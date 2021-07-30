@@ -54,3 +54,11 @@ namespace Program
         }
     }
 }
+
+/*
+Output:
+-------
+    Name : Lal Bosco
+    Professtion : Software Developer
+    Professtion : XXXX
+*/

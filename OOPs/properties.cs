@@ -72,3 +72,10 @@ namespace Program
         }
     }
 }
+
+/*
+Output:
+-------
+    Saurav Ganguly who is 45 years old and he has played 351 matches
+    He has scroed 11000 runs with highest score of 181
+*/

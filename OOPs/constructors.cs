@@ -110,3 +110,25 @@ namespace Program
         public override string ToString() => Name + "  " + age + " " + location;
     }
 }
+
+/*
+Output:
+-------
+    Contruct type1 : Lal
+
+    Contruct type2 : Bosco
+
+    Contruct type3 Name : Tamil
+    Contruct type3 Age : 3000
+    Contruct type3 Location : Tamil Nadu
+
+    Contruct type4 Name : Kanya Kumari
+    Contruct type4 Age : 50
+    Contruct type4 Location : South India
+
+    Contruct type4 Name : Malayalam
+    Contruct type4 Age : 2000
+    Contruct type4 Location : Kerala
+
+    Lal Bosco  32 TamilNadu
+*/

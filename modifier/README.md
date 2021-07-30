@@ -1,6 +1,5 @@
 ### async
 
-- It is a method specifier.
 - It's referred to as an async method (asynchronous)
 
 ### constant vs Readonly
@@ -29,15 +28,9 @@
 `ref` and `in`, both require the parameter has to initialize before pass into the method.
 We can not use these modifier in methods with `async` modifier as well as `yield return` or `yield break`.
 
-`ref_ou_in` Folder has an example of `ref`vs `out` vs `in`
-
-### new
-
-
-### unsafe
-
+`ref_out_in` Folder has an example of `ref`vs `out` vs `in`
 
 ### volatile
 
 # Note
-`abstract`, `override`, `sealed`, `virtual` these modifier sample code are written in `../OOPs`      
+`abstract`, `override`, `sealed`, `virtual`, `new` and `unsafe` these modifier sample code are written in `../OOPs`      

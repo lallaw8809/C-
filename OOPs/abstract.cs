@@ -44,3 +44,13 @@ namespace Program
         }
     }
 }
+
+
+/*
+Output:
+-------
+    Sub class
+    Sub class method
+    Abstarct class
+    Abstract class method
+*/

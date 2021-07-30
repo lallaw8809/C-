@@ -44,3 +44,10 @@ namespace Program
         }
     }
 }
+
+/*
+Output:
+-------
+    I live in Halmstad, Sweden
+    My friend lives in Denmark
+*/

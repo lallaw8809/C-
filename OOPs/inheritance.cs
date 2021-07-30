@@ -44,3 +44,12 @@ namespace Program
         }
     }
 }
+
+/*
+Output:
+-------
+    Parent Class variable name : 10
+    Child Class variable name : 99
+    I am in class method
+    I am in class method
+*/

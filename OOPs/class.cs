@@ -36,3 +36,12 @@ namespace Program
         }
     }
 }
+
+
+/*
+Output:
+-------
+    Class variable name : 10
+    I am in class method
+    200
+*/
