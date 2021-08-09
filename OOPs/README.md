@@ -167,3 +167,10 @@ Syntax
 
 # sealed
 - Once the class is declared as sealed class, this cann class can not be inherited.
+Syntax
+```sh
+sealed class sealedClass
+{
+}
+```
+`sealedClass.cs` Sample code of property.
