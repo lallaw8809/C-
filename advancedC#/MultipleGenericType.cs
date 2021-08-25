@@ -2,20 +2,20 @@ using System;
 
 public class Example
 {
-	public class MultipleGenericType<T, V, S>
-	{
-		private T t;
-		private V v;
-		private S s;
-		
-		public T T_Value { get; set; }
-		public V V_Value { get; set; }
+    public class MultipleGenericType<T, V, S>
+    {
+        private T t;
+        private V v;
+        private S s;
 
-		public void Show(S sValue, T tValue, V vValue)
-		{
-			Console.WriteLine("[{0}]\n\t T Value: {1}\n\t V Value: {2}", sValue, tValue, vValue);
-		}
-	}
+        public T T_Value { get; set; }
+        public V V_Value { get; set; }
+
+        public void Show(S sValue, T tValue, V vValue)
+        {
+            Console.WriteLine("[{0}]\n\t T Value: {1}\n\t V Value: {2}", sValue, tValue, vValue);
+        }
+    }
 
     public static int Main()
     {

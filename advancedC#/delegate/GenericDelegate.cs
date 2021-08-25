@@ -19,17 +19,17 @@ public class Example
         return m1 + m2;
     }
 	
-	// Muultiple Generic Type
-	public delegate T MultiGenericType<T, V>(T a, V b);
-	
-	public static int AddMultiNumbers(int x, bool y)
+    // Muultiple Generic Type
+    public delegate T MultiGenericType<T, V>(T a, V b);
+
+    public static int AddMultiNumbers(int x, bool y)
     {
-		if (y)
-		{
-			return x;
-		}
-		
-		return 0;
+        if (y)
+        {
+            return x;
+        }
+
+        return 0;
     }
 	
     public static void Main()
@@ -45,11 +45,11 @@ public class Example
         string msg = con.Invoke("Hello ", "World");
         Console.WriteLine("concentrating  two strings: " + msg);
 		
-		// Muultiple Generic Type
-		MultiGenericType<int, bool> MulDel = AddMultiNumbers;
+        // Muultiple Generic Type
+        MultiGenericType<int, bool> MulDel = AddMultiNumbers;
 
-		int RetValue = MulDel.Invoke(10, true);
-		Console.WriteLine("Muultiple Generic Types return value: " + RetValue);
+        int RetValue = MulDel.Invoke(10, true);
+        Console.WriteLine("Muultiple Generic Types return value: " + RetValue);
     }
 }
 
