@@ -43,18 +43,21 @@ Thease are the class modifiers in c#.
 - protected  
 - private  
 - internal  
+
 - abstarct   
 - static   
 - sealed   
 - new  
 - unsafe  
 
-| Method Access Modifiers | Description |
+| Method Access Modifiers (scope of the accessibility) | Description |
 | ------     | ------ |
-| Public     | This type or member can be freely accessed by inside and outside of the class in which it is defined. |
+| Public     | This type or member can be freely accessed by inside and outside (anywhere) of the class in which it is defined. |
 | protected  | This type or member can be freely accessed only by in the same class and in the derived from that class.|
 | private    | This type or member can be freely accessed only by in the same class or struct.|
 | internal   | This type or member can be freely accessed by any code in the same assembly, but not from another assembly.|
+
+# http://csharp.net-informations.com/language/csharp-access-specifiers.htm
 
 # Static class
 

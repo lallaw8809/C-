@@ -12,18 +12,19 @@ namespace Program
         {
             await Task.Run(() => AwaitAndAsync());
         }
+
+        // Using Task.FromResult in .NET4.5 to return a result from a Task
         public static async Task<int> TaskAsynAwaitCallingMethod()
         {
-            int res = await Task.FromResult<int>(GetSum(4, 5));
+            int res = await Task.FromResult<int>(Sum(4, 5));
             return res;
         }
 
-        private static int GetSum(int a, int b)
+        private static int Sum(int a, int b)
         {
             return a + b;
         }
 
-        // Using Task.FromResult in .NET4.5 to return a result from a Task
         static void Main(string[] args)
         {
             // We can run methodA and methodB parrally by using task programming

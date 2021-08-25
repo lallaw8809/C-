@@ -40,8 +40,10 @@ Syntex
 ```sh
 [access modifier] delegate [return type] [delegate name]([parameter list])
 ```
-`Delegate` This folder contains a sample code of delegates.
+`Delegate` This folder contains a sample code (Delagate parameter, Generic type (single and multiple), multicating and instanting delagate) of delegates.
 
+## Multiple Generic Type.
+`MultipleGenericType.cs`: Shows a smaple example of how to use the multi gerneric typr in c#  
 
 ## event
 
@@ -51,8 +53,8 @@ Syntex
 
 # Task
 
-# async 
-# await
+# async : Asynchronous method
+# await : suspension point
 
 
 ### Contextual keywords in c#
