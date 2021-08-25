@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 public class Example
-    {
+{
     public static void LamdaExpressExample()
     {
         List<int> Numbers = new List<int>()
@@ -45,6 +45,7 @@ public class Example
     public static void AsyncLamda()
     {
         //https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions
+        // https://www.c-sharpcorner.com/UploadFile/dacca2/lambda-expression-in-15-minutes/
     }
 
     public static int Main()
