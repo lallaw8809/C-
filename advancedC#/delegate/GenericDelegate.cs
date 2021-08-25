@@ -5,7 +5,7 @@ public class Example
 {
     // T (Generic type parameter or datatype) can be used as any datatypes
 	
-	// Single Generic Type
+    // Single Generic Type
     // Example is shown for int and string
     public delegate T SingleGenericType<T>(T a, T b);
 

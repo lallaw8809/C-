@@ -24,14 +24,13 @@ public class Example
         IntTypes.V_Value = 2;
         IntTypes.Show("Int Types", IntTypes.T_Value, IntTypes.V_Value);
 
-		MultipleGenericType<short, decimal, string> Disparate = new MultipleGenericType<short, decimal, string>();
+        MultipleGenericType<short, decimal, string> Disparate = new MultipleGenericType<short, decimal, string>();
         Disparate.T_Value = 3;
         Disparate.V_Value = 4;
         Disparate.Show("Disparate Types", Disparate.T_Value, Disparate.V_Value);
         
         return 0;
     }
-
 }
 
 /*
