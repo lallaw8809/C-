@@ -28,17 +28,17 @@ namespace Program
                 Console.WriteLine("INSIDE: This is a private method");
             }
 		
-			private int x = 10;
+            private int x = 10;
         }
-		
-		private class DrivedClass: InsidesideClass
-		{
-			private void method()
-			{
-				// Error: x is inaccessable
-				// Console.WriteLine(x);
-			}
-		}
+
+        private class DrivedClass: InsidesideClass
+        {
+            private void method()
+            {
+                // Error: x is inaccessable
+                // Console.WriteLine(x);
+            }
+        }
 
         public static void Main(string[] args)
         {

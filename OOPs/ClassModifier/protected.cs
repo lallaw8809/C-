@@ -27,16 +27,15 @@ namespace Program
             {
                 Console.WriteLine("INSIDE: This is a Public method");
             }
-			
-			protected int x = 10;
+            protected int x = 10;
         }
 
         protected class DrivedClass: InsidesideClass
-        {		
-			protected void method()
-			{
-				Console.WriteLine(x);
-			}
+        {
+            protected void method()
+            {
+                Console.WriteLine(x);
+            }
         }
 
         public static void Main(string[] args)
