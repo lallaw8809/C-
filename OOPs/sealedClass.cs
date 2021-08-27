@@ -17,6 +17,12 @@ namespace Program
             }
         }
 
+        // Can not inheritance the sealed class. This will throw an error as below
+        // cannot derive from sealed type 'Program.sealedClass'
+        // public class InheritenceClass: sealedClass
+        // {
+        // }
+
         static void Main(string[] args)
         {
             // Create an object
@@ -32,7 +38,5 @@ namespace Program
 /*
 Output:
 -------
-    Class variable name : 10
-    I am in class method
-    200
+    Class name: Sealed Class
 */

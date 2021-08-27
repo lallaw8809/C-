@@ -45,6 +45,18 @@ Syntex
 ## Multiple Generic Type.
 `MultipleGenericType.cs`: Shows a smaple example of how to use the multi gerneric typr in c#  
 
+## Lambda expression (=>)
+- It is used to creatre an anonymous function
+- There are two types of lambda expression.
+1. Expression lambda
+    ```sh
+    (input parameters) => expression
+    ```
+2. Statement lambda
+    ```sh
+    (input-parameters) => { <sequence-of-statements> }
+    ```
+
 ## event
 
 ## using
@@ -55,7 +67,7 @@ Syntex
 
 # async : Asynchronous method
 # await : suspension point
-
+// https://www.c-sharpcorner.com/article/async-and-await-in-c-sharp/
 
 ### Contextual keywords in c#
 

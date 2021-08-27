@@ -53,9 +53,14 @@ Thease are the class modifiers in c#.
 | Method Access Modifiers (scope of the accessibility) | Description |
 | ------     | ------ |
 | Public     | This type or member can be freely accessed by inside and outside (anywhere) of the class in which it is defined. |
-| protected  | This type or member can be freely accessed only by in the same class and in the derived from that class.|
 | private    | This type or member can be freely accessed only by in the same class or struct.|
+| protected  | This type or member can be freely accessed only by in the same class and in the derived from that class.|
 | internal   | This type or member can be freely accessed by any code in the same assembly, but not from another assembly.|
+
+
+protected internal
+private protected
+
 
 # http://csharp.net-informations.com/language/csharp-access-specifiers.htm
 
@@ -169,7 +174,7 @@ Syntax
 `interface.cs` Sample code of how to use interface
 
 # sealed
-- Once the class is declared as sealed class, this cann class can not be inherited.
+- Once the class is declared as sealed class, this class can not be inherited.
 Syntax
 ```sh
 sealed class sealedClass
