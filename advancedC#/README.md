@@ -56,6 +56,16 @@ Syntex
     ```sh
     (input-parameters) => { <sequence-of-statements> }
     ```
+`Lambda`: Shows a sample example that how to use Lambda
+
+## Func
+
+```sh
+public delegate TResult Func<in T, out TResult>(T arg);
+T: input
+TResult: Output (Return type)
+```
+`Func`: Shows a some example of how to use Func in c#.  
 
 ## event
 
