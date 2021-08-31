@@ -28,8 +28,8 @@ public class Example
         // Awaitable Func delegate that returns a value
         Func<int, int, Task<int>> add = async (a, b) =>
         {
-        await Task.Delay(100);
-        return a + b;
+            await Task.Delay(100);
+            return a + b;
         };
         Task<int> sum = add(5, 5);
         Console.WriteLine("Awaitable Func delegate that returns a value: " + sum.Result);

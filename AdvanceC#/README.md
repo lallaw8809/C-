@@ -42,9 +42,6 @@ Syntex
 ```
 `Delegate` This folder contains a sample code (Delagate parameter, Generic type (single and multiple), multicating and instanting delagate) of delegates.
 
-## Multiple Generic Type.
-`MultipleGenericType.cs`: Shows a smaple example of how to use the multi gerneric typr in c#  
-
 ## Lambda expression (=>)
 - It is used to creatre an anonymous function
 - There are two types of lambda expression.
@@ -67,13 +64,16 @@ TResult: Output (Return type)
 ```
 `Func`: Shows a some example of how to use Func in c#.  
 
-# Generic type
+## Generic type
 - Generics allows us to define the specification of the data type of programming elements in a class or a method.  
-`Generic Delegates`:  Theere is a example code in `Delegate/GenericDelegate.cs`
+`GenericType`: Shows a some example of how to use generic type in c#.  
+
+### Generic Delegates
 ```sh
 delegate T GenericType<T>(T n);
 ```
-`GenericType`: Shows a some example of how to use generic type in c#.  
+`Generic Delegates`:  Theere is a example code in `Delegate/GenericDelegate.cs`
+
 
 ## event
 
