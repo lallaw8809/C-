@@ -29,12 +29,13 @@ public class Program
 
 /*
 Output:
-Imput parameter 1: 25
 
-Imput parameter 2a: True
-Imput parameter 2b: False
+    Imput parameter 1: 25
 
-Hello World
-Hello world
-Passed Parameters: 5 7
+    Imput parameter 2a: True
+    Imput parameter 2b: False
+
+    Hello World
+    Hello world
+    Passed Parameters: 5 7
 */

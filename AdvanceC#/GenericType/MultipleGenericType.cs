@@ -46,13 +46,13 @@ public class Example
 
 /*
 Output:
-[Int Types]
-     T Value: 1
-     V Value: 2
-	 
-[Disparate Types]
-     T Value: 3
-     V Value: 4
+    [Int Types]
+        T Value: 1
+        V Value: 2
+        
+    [Disparate Types]
+        T Value: 3
+        V Value: 4
 
-Genric method type: 30
+    Genric method type: 30
 */

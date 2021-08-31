@@ -65,7 +65,8 @@ TResult: Output (Return type)
 `Func`: Shows a some example of how to use Func in c#.  
 
 ## Generic type
-- Generics allows us to define the specification of the data type of programming elements in a class or a method.  
+Generics allows us to define the specification of the data type of programming elements in a class or a method.  
+
 `GenericType`: Shows a some example of how to use generic type in c#.  
 
 ### Generic Delegates

@@ -23,5 +23,5 @@ public class Program
 /*
 Output:
 
-The factorial of 3 is 2
+    The factorial of 3 is 2
 */

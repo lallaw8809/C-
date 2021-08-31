@@ -55,7 +55,8 @@ public class Example
 
 /*
 Output:
-Adding two numberes: 35
-concentrating  two strings: Hello World
-Muultiple Generic Types return value: 10
+
+    Adding two numberes: 35
+    concentrating  two strings: Hello World
+    Muultiple Generic Types return value: 10
 */
