@@ -17,6 +17,13 @@ public class Example
         }
     }
 
+    // Generic method
+    public static T addTwoNumbers<T>(T x, T y)
+    {
+        dynamic dx = x, dy = y;
+        return dx + dy;
+    }
+
     public static int Main()
     {
         MultipleGenericType<int, int, string> IntTypes = new MultipleGenericType<int, int, string>();
@@ -28,6 +35,10 @@ public class Example
         Disparate.T_Value = 3;
         Disparate.V_Value = 4;
         Disparate.Show("Disparate Types", Disparate.T_Value, Disparate.V_Value);
+
+        // Call generic type method
+        int sum = addTwoNumbers<int>(10, 20);		
+        Console.WriteLine("Genric method type: " + sum);
         
         return 0;
     }
@@ -42,4 +53,6 @@ Output:
 [Disparate Types]
      T Value: 3
      V Value: 4
+
+Genric method type: 30
 */

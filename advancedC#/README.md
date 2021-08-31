@@ -67,6 +67,14 @@ TResult: Output (Return type)
 ```
 `Func`: Shows a some example of how to use Func in c#.  
 
+# Generic type
+- Generics allows us to define the specification of the data type of programming elements in a class or a method.  
+`Generic Delegates`:  Theere is a example code in `Delegate/GenericDelegate.cs`
+```sh
+delegate T GenericType<T>(T n);
+```
+`GenericType`: Shows a some example of how to use generic type in c#.  
+
 ## event
 
 ## using
@@ -74,6 +82,9 @@ TResult: Output (Return type)
 # Thread
 
 # Task
+
+# tuple
+// https://docs.microsoft.com/sv-se/dotnet/csharp/language-reference/builtin-types/value-tuples
 
 # async : Asynchronous method
 # await : suspension point
