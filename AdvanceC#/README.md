@@ -75,6 +75,8 @@ delegate T GenericType<T>(T n);
 ```
 `Generic Delegates`:  Theere is a example code in `Delegate/GenericDelegate.cs`
 
+## Tuple
+How to create a tupe and how to use it in the function (return and passing as parameter)
 
 ## event
 
@@ -83,9 +85,6 @@ delegate T GenericType<T>(T n);
 # Thread
 
 # Task
-
-# tuple
-// https://docs.microsoft.com/sv-se/dotnet/csharp/language-reference/builtin-types/value-tuples
 
 # async : Asynchronous method
 # await : suspension point

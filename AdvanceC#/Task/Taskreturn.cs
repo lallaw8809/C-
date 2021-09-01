@@ -9,6 +9,13 @@ public class Example
         public string Name;
     }
 
+    public static async Task<double> TaskMethod<TParam>(TParam num)
+    {
+        int x =  Convert.ToInt32(num);
+        double sum = await Task.FromResult<double>(CalculateSum(x));
+        return sum;
+    }
+
     public static int Main()
     {
         Task<double> task1 = Task.Run(() => {
@@ -40,6 +47,9 @@ public class Example
         Console.WriteLine("[Task3] Roll number : " + task3.Result.RollNo);
         Console.WriteLine("[Task3] Name        : " + task3.Result.Name);
 
+        Task<double> Task4 = TaskMethod<int>(4);
+        Console.WriteLine("[Task4] Value        : " + Task4.Result);
+
         return 0;
     }
 
@@ -61,4 +71,5 @@ Output:
     [Task2] Caculate sum : 10
     [Task3] Roll number : 55
     [Task3] Name        : Lal Bosco
+    [Task4] Value        : 6
 */

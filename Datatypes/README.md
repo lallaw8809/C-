@@ -32,3 +32,6 @@ datatype[] ArrayName;
 
 ### Tuple
 
+Tuple available in C# 7.0 and later (I tried it on .NET5)
+
+`Tuple.cs`: It shows an example of how to declare a tuple variable , initialize it and accessits data memebers.  
