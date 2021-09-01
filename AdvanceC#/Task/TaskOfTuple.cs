@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 
 public class Program
 {
-
     static async Task<(bool success, int returnValue)> Taskmethod()
     {
         return (true, 34);

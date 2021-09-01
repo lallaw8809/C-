@@ -9,10 +9,11 @@ public class Example
         public string Name;
     }
 
-    public static async Task<double> TaskMethod<TParam>(TParam num)
+    public static async Task<TResult> TaskMethod<TParam, TResult>(TParam num)
     {
-        int x =  Convert.ToInt32(num);
-        double sum = await Task.FromResult<double>(CalculateSum(x));
+        dynamic n = num;
+        dynamic sum = 0;
+        sum = await Task.FromResult<double>(CalculateSum(n));
         return sum;
     }
 
@@ -47,7 +48,7 @@ public class Example
         Console.WriteLine("[Task3] Roll number : " + task3.Result.RollNo);
         Console.WriteLine("[Task3] Name        : " + task3.Result.Name);
 
-        Task<double> Task4 = TaskMethod<int>(4);
+        Task<double> Task4 = TaskMethod<int, double>(4);
         Console.WriteLine("[Task4] Value        : " + Task4.Result);
 
         return 0;
